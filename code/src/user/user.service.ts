@@ -1,11 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { User, RoleEnum } from '../user.interface';
-
-interface IUserService {
-  createUser: () => boolean;
-  findUserByOne: () => User | null;
-  findAllUsers: () => User[];
-}
+import { User, RoleEnum } from './interfaces/user.interface';
 
 @Injectable()
 export class UserService {
